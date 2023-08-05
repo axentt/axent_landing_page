@@ -108,10 +108,10 @@ animation-duration: 0.4s;
 .nav-links {
   position: absolute;
   right: 0;
-  height: 50vh;
+  height: 60vh;
   top: 4.17rem;
   width: 60%;
-  opacity: .95;
+  opacity: 1;
   z-index: 1;
   background-color: var(--primary-color);
   display: flex;
