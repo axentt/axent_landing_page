@@ -1,13 +1,16 @@
+html {
+    scroll-behavior: smooth;
+}
+
 
 :root {
-  --primary-color: #1444bd;
-  --dark-color: #333333;
+  --primary-color: #1C3144;
+  --secondary-color: #819595;
+  --dark-color: #A41623;
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
   --success-color: #28a745;
-  -webkit-appearance: none;
 }
-
 /* modal */
 .modal form {
   display: grid;
@@ -70,7 +73,6 @@ animation-duration: 0.4s;
 /* Nav */
 .nav {
   background-color: var(--primary-color);
-  width: auto;
   gap: 0;
   text-align: left;
   display: flex;
@@ -97,9 +99,7 @@ animation-duration: 0.4s;
   display: block;
 }
 
-.nav .nav-links .logo {
-    display: none;
-}
+
 
 .nav .nav-links li a {
     color: #edf2f4;
@@ -111,8 +111,7 @@ animation-duration: 0.4s;
   height: 60vh;
   top: 4.17rem;
   width: 60%;
-  opacity: 1;
-  z-index: 1;
+  opacity: 100;
   background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
@@ -138,11 +137,6 @@ animation-duration: 0.4s;
 }
 
 .nav .logo {
-  display: block;
-  letter-spacing: 3px;
-}
-
-.nav .logo a img {
   display: none;
 }
 
@@ -204,19 +198,30 @@ animation-duration: 0.4s;
     display: none;
 }
 
+.main .hero-logo {
+  display: block;
+  width: 55%;
+  position: relative;
+  top: 4rem;
+  left: 3;
+  padding: 0;
+}
+
 .main {
   display: block;
   flex-direction: column;
-  height: 70vh;
-  width: auto;
+  height: 100vh;
+  z-index: 3;
 }
 .main .call-to-action {  
-  background-color: white;
-  height: 100%;
   text-align: left;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: left;
+  gap: 1.4rem;
+  height: fit-content;
+  height: 80%;
+  width: auto;
 }
 
 .main .call-to-action .btn-call {
@@ -238,13 +243,13 @@ animation-duration: 0.4s;
 
 
 .main .call-to-action h1 {
-  position: absolute;
+  position: relative;
+  left: 1rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
   font-size: 1.7rem;
   line-height: 2rem;
-  left: 2rem;
-  top: 10rem;
+  margin-top: 2rem;
 }
 
 .main .call-to-action h1 br {
@@ -252,18 +257,17 @@ animation-duration: 0.4s;
 }
 
 .main .call-to-action p {
-  position: absolute;
+  position: relative;
   line-height: 1.8rem;
   letter-spacing: 0.1rem;
   font-weight: lighter;
-  left: 2rem;
-  top: 20rem;
+  left: 1rem;
 }
 
 .main .call-to-action a {
-  position: absolute;
-  left: 2rem;
-  top: 27rem;
+  position: relative;
+  left: -4rem;
+  top: -3rem;
 }
 
 .main .action-img {
@@ -274,95 +278,146 @@ animation-duration: 0.4s;
   display: none;
 }
 
-/* Services mobile */
+/* Pricing mobile */
 
-.our-work {
-  color: black;
-  padding: 1rem;
-  text-align: center;
-  background-color: #edf2f4;
+
+.pricing {
+  background-color: #ededed;
+  height: 90vh;
+  width: 100%;
 }
 
-.our-work h1 {
-  margin: 0.5rem;
-}
-
-.our-work .work-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  text-align: center;
-  justify-content: center;
-}
-
-/* Our Mission */
-.mission-wrapper {
+.pricing .pricing-main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
-  text-align: center;
+  gap: 1rem;
 }
 
-.mission-wrapper .mission-details {
-  text-align: left;
-  line-height: 2.3rem;
-  padding: 0.2rem;
-  margin-bottom: 2rem;
-}
-
-.mission-wrapper .mission-img {
-  display: none;
-}
-
-/* Program specifc mobile page */
-.main2 {
+.pricing-left {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-}
-
-.main2 .call-to-action {
-  background-color: #1f1f1f;
-  height: 100vh;
-  width: 100vh;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: left;
+  width: auto;
+  line-height: .5rem;
+  height: 100%;
+  margin-bottom: 5rem;
 }
 
-.main2 .call-to-action h1 {
-  position: absolute;
+
+
+
+.pricing-left .pricing-left-heading {
   font-weight: bold;
-  letter-spacing: 0.1rem;
-  font-size: 1.7rem;
-  line-height: 2rem;
-  left: 2rem;
-  top: 15rem;
+  font-size: larger;
 }
 
-.main2 .call-to-action p {
-  position: absolute;
-  left: 2rem;
-  top: 20rem;
-  line-height: 1.8rem;
-  letter-spacing: 0.1rem;
-  font-weight: lighter;
-  margin-top: 1.5rem;
-}
 
-.main2 .call-to-action a {
-  position: absolute;
-  left: 2rem;
-  top: 28rem;
-  margin-top: 4.5rem;
-}
-
-.main2 .action-img {
+.pricing-left br {
   display: none;
 }
+
+.pricing-left h1 {
+ font-size: medium;
+ margin: 0;
+}
+
+.pricing-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  width: auto;
+}
+
+.pricing-right h3 {
+  font-size: larger;
+      white-space: nowrap;
+
+}
+
+.pricing-right-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 3rem;
+  gap: 2rem;
+  text-align: left;
+  }
+
+
+.pricing-right-details span {
+  display: none;
+}
+
+.pricing-right-details i {
+  position: relative;
+  top: 1.8rem;
+  color: #435fa5;
+}
+
+.pricing-right-details-heading {
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: .9rem;
+  white-space: nowrap;
+}
+
+
+.pricing-right-details:last-of-type p:last-of-type {
+  text-align: center;
+}
+
+
+/* About */
+
+.about {
+  background-color: #000a23;
+  height: 75vh;
+  color: white;
+}
+
+.about h1 {
+  position: relative;
+  left: 1rem;
+  top: 3rem;
+  z-index: 2;
+  font-size: 1.5rem;
+
+}
+
+.about .about-main {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 2rem;
+}
+
+.about-main .about-image {
+  height: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.about-image img {
+  height: 430px;
+}
+
+
+.about-message {
+  text-align: left;
+  position: relative;
+  top: -6.8rem;
+  left: 2rem;
+  z-index: 1;
+}
+
+
 
 /* Enroll */
 .enrol .enrol-container {

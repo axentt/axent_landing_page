@@ -270,7 +270,7 @@ body {
   width: 100%;
   margin: auto;
   gap: 32rem;  
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   background-color: white;
   opacity: .98;
@@ -474,6 +474,10 @@ body {
 
 }
 
+
+.hero-logo {
+  display: none;
+}
 
 /* Show case */
 
