@@ -8,7 +8,7 @@ html {
   margin: 0;
   padding: 0;
   -webkit-appearance: none;
-  font-family: "Lexend";
+
 }
 
 :root {
@@ -56,7 +56,8 @@ textarea {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+/* font-family: 'Montserrat Alternates', sans-serif; */
   color: rgb(0, 0, 0);
 }
 
