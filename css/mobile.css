@@ -80,6 +80,7 @@ animation-duration: 0.4s;
   justify-content: start;
   z-index: 100;
   opacity: 1;
+  min-height: auto;
 }
 
 
@@ -138,6 +139,8 @@ animation-duration: 0.4s;
 .nav .burger {
   display: block;
   margin-left: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   padding-right: 1.3rem;
 }
 
@@ -203,29 +206,26 @@ animation-duration: 0.4s;
     display: none;
 }
 
+.main {
+  display: block;
+  flex-direction: column;
+
+  overflow-y: hidden;
+}
+
 .main .hero-logo {
   display: block;
-  width: 55%;
+  width: 100px;
   position: relative;
   top: 4rem;
   left: 3;
   padding: 0;
+  height: auto;
 }
 
-.main {
-  display: block;
-  flex-direction: column;
-  height: 80vh;
-}
+
 .main .call-to-action {  
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  gap: 1.4rem;
-  height: fit-content;
-  height: 80%;
-  width: auto;
+  
 }
 
 .main .call-to-action .btn-call {

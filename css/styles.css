@@ -492,13 +492,13 @@ body {
 
 
 .main .call-to-action {
-
+  display: flex;
   line-height: 2.9rem;
   flex-direction: column;  
   text-align: left;
   align-items: center;
   width:100% ;
-
+  gap: 1rem;
   position: relative;
   top: 6.8rem;
 }
