@@ -236,6 +236,8 @@ animation-duration: 0.4s;
   width: auto;
   padding: .2rem 3rem;
   border-radius: 100px;
+  position: relative;
+  left: -3.6rem;
 }
 
 .main .call-to-action .video-link {
@@ -321,13 +323,14 @@ animation-duration: 0.4s;
 }
 
 
-.pricing-left br {
+.pricing-left h1 br {
   display: none;
 }
 
 .pricing-left h1 {
  font-size: medium;
  margin: 0;
+ white-space: nowrap;
 }
 
 .pricing-right {
