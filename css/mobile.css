@@ -222,6 +222,7 @@ animation-duration: 0.4s;
   left: 3;
   padding: 0 0 0 0;
   height: auto;
+  margin-bottom: 1rem;
 }
 
 
@@ -236,7 +237,7 @@ animation-duration: 0.4s;
   align-items: center;
   gap: 1.2rem;
   position: relative;
-  top: -3rem;
+  top: -1rem;
 }
 
 .main .call-to-action  .btn-call {
@@ -386,7 +387,7 @@ animation-duration: 0.4s;
 }
 
 
-.pricing-right-details:last-of-type p:last-of-type {
+.pricing-right-details p {
   text-align: center;
 }
 
