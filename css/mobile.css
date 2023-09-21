@@ -229,7 +229,17 @@ animation-duration: 0.4s;
   height: auto;
 }
 
-.main .call-to-action .btn-call {
+.main .call-to-action div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  position: relative;
+  top: -3rem;
+}
+
+.main .call-to-action  .btn-call {
   display: block;
   font-size: medium;
   margin-top: 3rem;

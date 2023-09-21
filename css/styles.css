@@ -500,7 +500,7 @@ body {
   width:100% ;
   gap: 1rem;
   position: relative;
-  top: 6.8rem;
+  top: 3.8rem;
 }
 
 .main .call-to-action h1 {
@@ -531,7 +531,7 @@ body {
   height: 600px;
   flex: 2;
   position: absolute;
-  top: -16rem;
+  top: -19rem;
   left: 4rem;
 }
 
