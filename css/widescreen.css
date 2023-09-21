@@ -1,0 +1,92 @@
+/* Navbar */
+.nav {
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 13vh;
+  background-color: rgba(255, 255, 255, 0.98);
+  gap: 32rem;
+  /* position: fixed; */
+  /* top: 0; */ /* Commented out since position: fixed is also commented out. Uncomment both if needed. */
+}
+
+.nav a {
+  color: black;
+  transition: all 0.5s ease; /* Specificity in transition duration */
+}
+
+.nav a:hover {
+  color: #01447e;
+}
+
+.nav .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.nav .nav-links li {
+  list-style: none;
+  color: #b9b9b9;
+  padding: 1.3rem;
+}
+
+.nav .nav-actions {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  list-style: none;
+}
+
+.nav .nav-actions .btn-call {
+  position: absolute;
+  top: 2.7rem;
+}
+
+#active {
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid rgb(255, 187, 0);
+}
+
+/* Commented out sections, uncomment if needed
+.nav .nav-links li a {
+  letter-spacing: 1px;
+  list-style: none;
+  color: #f4f4f4;
+  text-decoration: none;
+}
+
+.nav .nav-links li a:hover {
+  color: #f09433;
+  transition: all ease 0.2s;
+}
+*/
+
+.nav .nav-links .logo {
+  width: 100px;
+  margin: auto;
+}
+
+.nav .logo:hover {
+  opacity: 0.5;
+  transition: all 0.5s ease;
+}
+
+.nav .burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.5s ease;
+}
+
+/* Dynamic class for nav tray upon click */
+.nav-active {
+  transform: translateX(0);
+}

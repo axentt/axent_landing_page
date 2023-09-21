@@ -78,6 +78,8 @@ animation-duration: 0.4s;
   display: flex;
   flex-direction: row;
   justify-content: start;
+  z-index: 100;
+  opacity: 1;
 }
 
 
@@ -105,13 +107,16 @@ animation-duration: 0.4s;
     color: #edf2f4;
 }
 
+.nav .nav-links {
+  gap: 4rem;
+  z-index: 5;
+}
+
 .nav-links {
   position: absolute;
   right: 0;
-  height: 60vh;
   top: 4.17rem;
   width: 60%;
-  opacity: 100;
   background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
@@ -210,8 +215,7 @@ animation-duration: 0.4s;
 .main {
   display: block;
   flex-direction: column;
-  height: 100vh;
-  z-index: 3;
+  height: 80vh;
 }
 .main .call-to-action {  
   text-align: left;

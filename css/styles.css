@@ -271,7 +271,6 @@ body {
   margin: auto;
   gap: 32rem;  
   /* position: fixed; */
-  top: 0;
   background-color: white;
   opacity: .98;
 }
@@ -499,7 +498,7 @@ body {
   text-align: left;
   align-items: center;
   width:100% ;
-  z-index: 1;
+
   position: relative;
   top: 6.8rem;
 }
