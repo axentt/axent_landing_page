@@ -116,7 +116,7 @@ animation-duration: 0.4s;
 .nav-links {
   position: absolute;
   right: 0;
-  top: 4.17rem;
+  top: 3.17rem;
   width: 60%;
   background-color: var(--primary-color);
   display: flex;
@@ -211,6 +211,7 @@ animation-duration: 0.4s;
   flex-direction: column;
 
   overflow-y: hidden;
+  height: 100vh;
 }
 
 .main .hero-logo {
@@ -219,13 +220,13 @@ animation-duration: 0.4s;
   position: relative;
   top: 4rem;
   left: 3;
-  padding: 0;
+  padding: 0 0 0 0;
   height: auto;
 }
 
 
 .main .call-to-action {  
-  
+  height: auto;
 }
 
 .main .call-to-action .btn-call {
